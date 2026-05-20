@@ -1,2 +1,2 @@
 # jrj-empreiteira
-landing page for a enterprise of building
+A simple landing page for enterprise of building

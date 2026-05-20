@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial, helvetica, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--color1: #333;
+	--color2: #910815;
+	--color3: #ababab;
+	--color4: #600c14;
+	--color5: #999;
+	--contrast-c: #aa0000;
+	--background: #eee;
+	--background2: #cdcdcd;
+}
+
+@font-face {
+	font-family: 'montserrat';
+	src: url('../fonts/montserrat.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'montserrat bold';
+	src: url('../fonts/montserrat-bold.ttf') format('truetype');
+	font-weight: normal;
+}
+
+
+h1 {
+	font-family: 'montserrat bold';
+	font-weight: bold;
+	font-size: 3em;
+	animation: fadeLeftH1 4s ease both;
+	animation-timeline: view();
+}
+
+h2 {
+	color: var(--color2);
+	font-family: 'montserrat bold';
+	font-weight: normal;
+	font-size: 2.5em;
+	animation: fadeLeft 4s ease;
+	animation-timeline: scroll();
+}
+
+h3 {
+	font-family: 'montserrat';
+	font-size: 2em;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+p { line-height: 30px; }
+
+header {
+	z-index: 4;
+	position: fixed;
+	top: 0;
+	height: 70px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--color1);
+	color: #fff;
+}
+header img { margin-right: 25px; }
+
+.back-button {
+	background: var(--color2);
+	color: #fff;
+	padding: 10px 30px;
+	margin: 30px;
+	border-radius: 20px;
+	transition: .2s;
+}
+
+.back-button:hover { filter: brightness(.5); }
+
+main { padding: 120px 120px 20px 120px; }
+section { margin: 40px; }
+section .img-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+section .img-services {
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+}
+
+section .text-services {
+	margin: 30px 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+section .text-services h2 {
+	text-align: center;
+	margin: 30px 0;
+}
+
+section .text-services p {
+	text-align: center;
+	margin: 30px 0;
+}
+
+section .text-services a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: auto;
+	background: var(--color2);
+	color: #fff;
+	margin: 30px;
+	padding: 15px 30px;
+	border-radius: 20px;
+	transition: .2s;
+}
+
+section .text-services a:hover { filter: brightness(.5); }
+
+footer {
+	padding: 120px 25px 0 25px;
+	background-color: var(--color1);
+	color: #fff;
+	margin-bottom: -200px;
+}
+
+footer div.footer-box {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column wrap;
+}
+
+footer section#menu {
+	display: flex;
+	flex-flow: column nowrap;
+	color: #fff;
+}
+
+footer section#menu li {
+	list-style: none;
+	margin: 20px 0;
+}
+
+footer section#menu a { color: #fff; }
+footer section#info {
+	width: 200px;
+	padding: 5px 0;
+	text-align: left;
+}
+
+footer section#info .social-medias {
+	display: flex;
+	justify-content: flex-start;
+	gap: 15px;
+}
+
+footer section#info img { margin: 8px 0; }
+footer section#rights {
+	text-align: left;
+	padding: 30px 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 402px) {
+	main { padding: 120px 10px; }
+
+	section .img-box img {
+		height: 200px;
+		width: 280px;
+	}
+
+	section .text-services a { margin: 0; }
+}
+
+@media screen and (min-width: 360px) and (max-width: 647px) {
+	section .text-services a { width: 80%; }
+}
+
+@media screen and (min-width: 402px) and (max-width: 647px) {
+	main { padding: 120px 10px; }
+}
+
+
+@media screen and (min-width: 646px) {
+	
+	section .img-services {
+		display: flex;
+		justify-content: center;
+		width: 575px;
+	}
+
+	section .text-services a { width: 575px; }
+
+	footer div.footer-box {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row nowrap;
+	}
+
+	footer section#menu { margin-left: 20px; }
+	footer section#info {
+		text-align: right;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-end;
+	}
+
+	footer section#rights {
+		display: flex;
+		justify-content: center;
+	}
+
+	footer section#info p { text-align: right; }
+}
+
+@media screen and (min-width: 1060px) {
+	section .text-services { margin: 0 120px; }
+}
+
+@media screen and (min-width: 1400px) {
+	section {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section .text-services { margin: 60px; }
+}
+
+@media screen and (min-width: 2300px) {
+	section { margin: 0 18%; }
+}
