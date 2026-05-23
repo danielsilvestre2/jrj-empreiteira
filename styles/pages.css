@@ -149,6 +149,10 @@ footer div.footer-box {
 	flex-flow: column wrap;
 }
 
+footer h3 { margin-bottom: 30px; }
+
+footer section { padding: 30px 0; }
+
 footer section#menu {
 	display: flex;
 	flex-flow: column nowrap;
@@ -160,11 +164,12 @@ footer section#menu li {
 	margin: 20px 0;
 }
 
-footer section#menu a { color: #fff; }
+footer section#menu a { color: #aaa; }
 footer section#info {
 	width: 200px;
 	padding: 5px 0;
 	text-align: left;
+	color: #aaa;
 }
 
 footer section#info .social-medias {
@@ -173,6 +178,8 @@ footer section#info .social-medias {
 	gap: 15px;
 }
 
+footer section#info .social-medias img { transition: .2s; }
+footer section#info .social-medias img:hover { filter: brightness(.5); }
 footer section#info img { margin: 8px 0; }
 footer section#rights {
 	text-align: left;
@@ -219,6 +226,7 @@ footer section#rights {
 	footer section#info {
 		text-align: right;
 		display: flex;
+		justify-content: center;
 		flex-flow: column nowrap;
 		align-items: flex-end;
 	}
@@ -229,6 +237,10 @@ footer section#rights {
 	}
 
 	footer section#info p { text-align: right; }
+}
+
+@media screen and (min-width: 959px) {
+	footer { padding: 120px 10% 0 10%; }
 }
 
 @media screen and (min-width: 1060px) {
@@ -244,6 +256,8 @@ footer section#rights {
 	}
 
 	section .text-services { margin: 60px; }
+
+	footer { padding: 120px 20% 0 20%; }
 }
 
 @media screen and (min-width: 2300px) {

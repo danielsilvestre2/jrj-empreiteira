@@ -491,7 +491,6 @@ footer section#info .social-medias {
 
 footer section#info .social-medias img { transition: .2s; }
 footer section#info .social-medias img:hover { filter: brightness(.5); }
-
 footer section#info img { margin: 8px 0; }
 footer section#rights {
 	order: 1;
