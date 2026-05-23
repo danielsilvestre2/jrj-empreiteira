@@ -92,7 +92,8 @@ header {
 	justify-content: space-between;
 	background: var(--color1);
 	color: #fff;
-	padding: 10px 60px;
+	padding: 10px 30px;
+	box-shadow: 0 5px 10px #00000030;
 }
 
 label#menu-icon {
@@ -126,6 +127,7 @@ label#menu-icon span {
 #checkmenu:checked + label span.bar-3 { transform: rotate(45deg) translate(-7px, -7px); }
 
 nav.pc-nav {
+	margin-left: 15px;
 	font-family: 'montserrat';
 	display: none;
 }
@@ -177,6 +179,8 @@ nav.android-nav .social-media-box {
 	position: absolute;
 	top: 90%;
 	left: 7%;
+	display: flex;
+	gap: 20px;
 }
 
 div.grad {
@@ -454,10 +458,13 @@ footer div.footer-box {
 	flex-flow: column wrap;
 }
 
+footer h3 { margin-bottom: 30px; }
+
+footer section { padding: 30px 0; }
+
 footer section#menu {
 	display: flex;
 	flex-flow: column nowrap;
-	color: #fff;
 }
 
 footer section#menu li {
@@ -465,11 +472,15 @@ footer section#menu li {
 	margin: 20px 0;
 }
 
-footer section#menu a { color: #fff; }
+footer section#menu a { color: #aaa; }
 footer section#info {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
 	width: 200px;
 	padding: 5px 0;
 	text-align: left;
+	color: #aaa;
 }
 
 footer section#info .social-medias {
@@ -477,6 +488,9 @@ footer section#info .social-medias {
 	justify-content: flex-start;
 	gap: 15px;
 }
+
+footer section#info .social-medias img { transition: .2s; }
+footer section#info .social-medias img:hover { filter: brightness(.5); }
 
 footer section#info img { margin: 8px 0; }
 footer section#rights {
@@ -610,6 +624,8 @@ footer section#rights {
 		width: 400px;
 	}
 
+	footer { padding: 120px 60px 0 60px; }
+
 	footer div.footer-box {
 		display: flex;
 		justify-content: space-between;
@@ -618,17 +634,20 @@ footer section#rights {
 
 	footer section#menu { margin-left: 20px; }
 	footer section#info { text-align: right; }
-	footer section#rights {
-		display: flex;
-		justify-content: center;
-	}
+	footer section#info p.email-text { transform: translateX(-30px); }
+	footer section#info p { text-align: right; }
 
 	footer section#info .social-medias {
 		display: flex;
 		justify-content: flex-end;
 	}
 
-	footer section#info p { text-align: right; }
+	footer section#rights {
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+	}
+
 }
 
 
@@ -717,7 +736,6 @@ footer section#rights {
 	section#pilars #pilars-text { padding: 0 120px; }
 	section#pilars .pilars-box { padding: 0 120px; }
 	section#services { padding: 120px 190px; }
-
 	section#services .services-card { justify-content: space-between; }
 	section#services .s-box4 { margin-bottom: 120px; }
 
@@ -737,6 +755,8 @@ footer section#rights {
 		display: grid;
 		place-self: center;
 	}
+
+	footer { padding: 120px 120px 0 120px; }
 }
 
 @media screen and (min-width: 1450px) {
@@ -746,6 +766,8 @@ footer section#rights {
 		margin: 120px auto 0 auto;
 		padding: 0 10%;
 	}
+
+	footer { padding: 120px 20% 0 20%; }
 }
 
 @media screen and (min-width: 1735px) {
