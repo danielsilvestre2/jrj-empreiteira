@@ -89,7 +89,7 @@ header img { margin-right: 25px; }
 .back-button:hover { filter: brightness(.5); }
 
 main { padding: 120px 120px 20px 120px; }
-section { margin: 40px; }
+section#services-box { margin: 40px; }
 section .img-box {
 	display: flex;
 	justify-content: center;
