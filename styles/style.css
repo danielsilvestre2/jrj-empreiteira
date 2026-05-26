@@ -686,6 +686,7 @@ footer section#rights {
 	nav.android-nav { display: none; }
 	label#menu-icon { display: none; }
 	nav.pc-nav { display: flex; }
+	nav.pc-nav li:nth-of-type(2) { display: none; }
 }
 
 @media screen and (min-width: 805px) {
