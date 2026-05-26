@@ -473,6 +473,7 @@ footer section#menu li {
 }
 
 footer section#menu a { color: #aaa; }
+footer section#menu a:hover { color: #eee; }
 footer section#info {
 	display: flex;
 	flex-flow: column nowrap;

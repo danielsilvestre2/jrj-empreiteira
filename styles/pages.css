@@ -165,6 +165,7 @@ footer section#menu li {
 }
 
 footer section#menu a { color: #aaa; }
+footer section#menu a:hover { color: #eee; }
 footer section#info {
 	width: 200px;
 	padding: 5px 0;
