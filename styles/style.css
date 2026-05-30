@@ -211,6 +211,7 @@ section#hero .CTA {
 	border-radius: 40px;
 	box-shadow: 0 10px 20px #00000040;
 	transition: .2s;
+	animation: pulse-button 1.2s ease infinite;
 }
 
 section#hero .CTA:hover { filter: brightness(.5); }
